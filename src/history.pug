@@ -1,0 +1,17 @@
+extends pug/base
+
+prepend vars
+	- title = 'Cryptor Guru Lab'
+	- description = ''
+	- image = ''
+
+append vars
+	- link.icon32x32 = './images/favicon.svg'
+
+block content
+	main.s-main
+		include pug/app/bar-top
+		include pug/app/bar-left
+		section.s-content.s-content--history
+			.container
+				include pug/pages/history/index

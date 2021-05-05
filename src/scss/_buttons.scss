@@ -1,0 +1,44 @@
+.btn {
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	span {
+		position: relative;
+		z-index: 5;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&-default {
+		&:before {
+			background: linear-gradient(90deg, #5D64CE 0%, #A182D8 100%);
+		}
+	}
+
+	&-orange {
+		&:before {
+			background: linear-gradient(90deg, #FF9D6E 0%, #FE9B6C 6.25%, #F08754 100%);
+		}
+	}
+}

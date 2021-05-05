@@ -1,0 +1,51 @@
+h1 Purchase history
+.b-history
+	.b-history__table
+		table
+			tr
+				th Timestamp
+				th Value
+				th Currency
+				th
+					span.filter
+						| Received
+						a(href="#")
+							+svg("filter")
+				th Status
+			tr
+				td September 30, 2019, 23:59
+				td 0.00625
+				td ETH
+				td 0.035116
+				td
+					span.status.status-completed
+						+svg("status-2")
+						| Completed
+			tr
+				td May 31, 2019, 17:28
+				td 0.00625
+				td BTC
+				td 0.035116
+				td
+					span.status.status-awaiting
+						+svg("status-1")
+						| Awaiting Payment
+			tr
+				td June 7, 2020, 00:00
+				td 0.00625
+				td TRX
+				td 0.035116
+				td
+					span.status.status-completed
+						+svg("status-2")
+						| Completed
+	.b-history__table
+		table
+			tr
+				th Timestamp
+				th Value
+				th Currency
+				th Received
+				th Status
+			tr
+				td(colspan="5").text-center No records

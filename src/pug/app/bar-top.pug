@@ -1,0 +1,38 @@
+.b-bar.b-bar-top
+	.b-bar__btn
+		+svg("arw")
+	.b-bar__date Monday, 26 April 2021
+	.b-bar__box
+		.b-bar__balance
+			a(href="#")
+				span Balance:
+				strong 0.000 CGL
+	.b-bar__box
+		.b-bar__user.js-click
+			.b-bar__user__frame
+				+svg("user")
+				span seomitis@gmail.com
+			.b-bar__user__list
+				ul
+					li
+						a(href="#") Change password
+					li
+						a(href="#") Sign out
+	.b-bar__box
+		.b-bar__lang.js-click
+			.b-bar__lang__current
+				span.b-bar__lang__current__icon
+					+svg("lang-en")
+				span.b-bar__lang__current__label En
+				span.b-bar__lang__current__arw
+					+svg("arw-up")
+			.b-bar__lang__list
+				ul
+					li
+						a(href="#")
+							+svg("lang-ru")
+							span Ru
+					li
+						a(href="#")
+							+svg("lang-cn")
+							span Cn

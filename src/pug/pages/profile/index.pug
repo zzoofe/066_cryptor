@@ -1,0 +1,48 @@
+h1 Profile
+.b-profile
+	form(action="#")
+		.b-profile__columns-3
+			.form-field
+				label.form-field__label First Name
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="Alex")
+			.form-field
+				label.form-field__label Last Name
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="Dawson")
+			.form-field
+				label.form-field__label Date of birth
+				.form-field__control
+					input(type="text" class="inp date-input" value="21.01.1970")
+					span.date-icon
+			.form-field
+				label.form-field__label Phone number
+				.form-field__control
+					input(type="text" class="inp" value="+7")
+			.form-field
+				label.form-field__label Address
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="Type your address")
+			.form-field
+				label.form-field__label Zip-code
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="65870")
+		.b-profile__columns-2
+			.form-field
+				label.form-field__label City
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="Newcastle")
+			.form-field
+				label.form-field__label Country of residence
+				.form-field__control
+					input(type="text" class="inp" value="" placeholder="Algeria")
+		.form-field.b-profile__addressToken
+			label.form-field__label Ethereum address for token receiving
+			.form-field__control
+				.b-profile__addressToken__icon
+					img(src="images/ethereum.svg" alt="")
+				.b-profile__addressToken__input
+					input(type="text" class="inp" value="" placeholder="Add your wallet")
+		.b-profile__button
+			button.btn.btn-orange
+				span Save

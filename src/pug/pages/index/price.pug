@@ -1,0 +1,57 @@
+.b-price
+	h2 Price by date
+	.b-price__list
+		.b-price__item
+			.b-price__item__title Private sale
+			.b-price__item__date
+				p
+					| May 1, 2019, 00:00
+					| !{' '}
+					span (UTC)
+				p
+					| May 31, 2019, 23:59
+					| !{' '}
+					span (UTC)
+			.b-price__item__status.is-completed
+				+svg("status-2")
+				span Stage completed
+			.b-price__item__value
+				strong 0.0001318
+				| !{' '}
+				| ETH
+		.b-price__item
+			.b-price__item__title Pre sale
+			.b-price__item__date
+				p
+					| May 1, 2019, 00:00
+					| !{' '}
+					span (UTC)
+				p
+					| May 31, 2019, 23:59
+					| !{' '}
+					span (UTC)
+			.b-price__item__status.is-current
+				+svg("status-3")
+				span Stage completed
+			.b-price__item__value
+				strong 0.0001318
+				| !{' '}
+				| ETH
+		.b-price__item
+			.b-price__item__title Main sale
+			.b-price__item__date
+				p
+					| May 1, 2019, 00:00
+					| !{' '}
+					span (UTC)
+				p
+					| May 31, 2019, 23:59
+					| !{' '}
+					span (UTC)
+			.b-price__item__status.is-started
+				+svg("status-1")
+				span Stage not started
+			.b-price__item__value
+				strong 0.0001318
+				| !{' '}
+				| ETH

@@ -1,0 +1,38 @@
+.b-contribute.s-tabs
+	.b-contribute__tabs
+		ul.b-contribute__tabs__list.tabs
+			li.b-contribute__tabs__item.is-active Add Ethereum address
+			li.b-contribute__tabs__item Make payment
+			li.b-contribute__tabs__item Receive funds
+	.b-contribute__frame.b-tabs.is-visible
+		form(action="#")
+			.form-field
+				label.form-field__label Enter address on which you want to receive CGL tokens
+				.form-field__control
+					input(type="text" class="inp" value="0x68C4c852974fA7D03aD178Dd9138559834b0CaB8")
+			.form-buttons
+				button.btn.btn-default
+					span Cancel
+				button.btn.btn-orange
+					span Next
+	.b-contribute__frame.b-tabs
+		form(action="#")
+			.form-field
+				label.form-field__label Please send
+				.form-field__control
+					input(type="text" class="inp" value="0.00625 ETH" disabled="disabled")
+			.form-field
+				label.form-field__label To the address
+				.form-field__control
+					input(type="text" class="inp" value="0xe6C2D30eBCAa14d3a9B6038ef6509D043193eDeE" disabled="disabled")
+			.form-desc
+				p.order
+					| In order to receive
+					strong 1.0000000 CGL
+				p The tokens will appear in your Ethereum account after you complete your payment. You will also receive an email.
+				p Tokens will be sent on the address you’ve specified on previous step.
+			.form-buttons
+				button.btn.btn-default
+					span Cancel
+				button.btn.btn-orange
+					span Next

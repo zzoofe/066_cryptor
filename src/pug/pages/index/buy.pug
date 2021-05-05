@@ -1,0 +1,42 @@
+.b-buy.s-tabs
+	h2 Buy tokens
+	.b-buy__tabs
+		ul.b-buy__tabs__list.tabs
+			li.b-buy__tabs__item.is-active BTC
+			li.b-buy__tabs__item ETH
+	.b-buy__form.b-tabs.is-visible
+		form(action="#")
+			.b-buy__form__columns
+				.form-field
+					label.form-field__label Amount of tokens to purchase
+					.form-field__control
+						input(type="text" class="inp" value="" placeholder="0")
+						span.val CGL
+				.form-field
+					label.form-field__label Amount to pay
+					.form-field__control
+						input(type="text" class="inp" value="0.19767")
+						span.val BTC
+			.b-buy__form__desc
+				| Minimal investment 0 BTC = 0 USD
+			.b-buy__form__button
+				button.btn.btn-orange
+					span Purchase
+	.b-buy__form.b-tabs
+		form(action="#")
+			.b-buy__form__columns
+				.form-field
+					label.form-field__label Amount
+					.form-field__control
+						input(type="text" class="inp" value="0")
+						span.val CGL
+				.form-field
+					label.form-field__label Amount
+					.form-field__control
+						input(type="text" class="inp" value="0")
+						span.val ETH
+			.b-buy__form__desc
+				| Minimal investment 0 BTC = 0 USD
+			.b-buy__form__button
+				button.btn.btn-orange
+					span Purchase
