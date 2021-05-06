@@ -651,6 +651,11 @@
 							}
 						}
 
+						@include mobile-s {
+							font-size: 13px;
+							grid-template-columns: 76px 1fr;
+						}
+
 						.status {
 							display: flex;
 							align-items: center;
@@ -713,6 +718,11 @@
 					font-size: 16px;
 				}
 
+				@include mobile-s {
+					font-size: 14px;
+					padding: 0 35px;
+				}
+
 				&__num {
 					position: absolute;
 					left: 30px;
@@ -727,6 +737,10 @@
 						left: 15px;
 						font-size: 16px;
 					}
+
+					@include mobile-s {
+						left: 10px;
+					}
 				}
 
 				&__arw {
@@ -739,10 +753,20 @@
 						right: 15px;
 					}
 
+					@include mobile-s {
+						right: 10px;
+						margin-top: -4px;
+					}
+
 					svg {
 						width: 16px;
 						height: 11px;
 						display: block;
+
+						@include mobile-s {
+							width: 12px;
+							height: 8px;
+						}
 					}
 				}
 

@@ -2,6 +2,8 @@ import '@babel/polyfill';
 import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
 import datepicker from 'js-datepicker'
+import 'select2'
+import intlTelInput from 'intl-tel-input'
 
 svg4everybody();
 
@@ -13,6 +15,15 @@ if (pikerSelector) {
 			const value = date.toLocaleDateString()
 			input.value = value
 		}
+	})
+}
+
+const inputPhone = document.querySelector("#phone");
+
+if (inputPhone) {
+	intlTelInput(inputPhone, {
+		onlyCountries: ["ru", "cn", "us"],
+		preferredCountries: [],
 	})
 }
 
@@ -31,10 +42,7 @@ require('ninelines-ua-parser');
 			showList()
 			faq()
 			tabs()
-
-			$('.date-icon').on('click', function () {
-				picker.show()
-			})
+			select()
 		}
 	)
 
@@ -46,6 +54,12 @@ require('ninelines-ua-parser');
 		}
 	})
 })(jQuery)
+
+function select() {
+	$('.js-select').select2({
+		minimumResultsForSearch: -1
+	});
+}
 
 function tabs() {
 	$('ul.tabs').delegate('li:not(.is-active)', 'click', function() {

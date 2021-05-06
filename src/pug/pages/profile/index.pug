@@ -18,7 +18,7 @@ h1 Profile
 			.form-field
 				label.form-field__label Phone number
 				.form-field__control
-					input(type="text" class="inp" value="+7")
+					input(type="text" class="inp" value="+7" id="phone")
 			.form-field
 				label.form-field__label Address
 				.form-field__control
@@ -35,7 +35,10 @@ h1 Profile
 			.form-field
 				label.form-field__label Country of residence
 				.form-field__control
-					input(type="text" class="inp" value="" placeholder="Algeria")
+					select.js-select
+						option(value="1") Algeria
+						option(value="2") Lgeria
+						option(value="3") Algeria
 		.form-field.b-profile__addressToken
 			label.form-field__label Ethereum address for token receiving
 			.form-field__control
